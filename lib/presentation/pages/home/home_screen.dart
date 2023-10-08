@@ -110,8 +110,8 @@ class HomeScreen extends StatelessWidget {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(100),
                                 child: SizedBox(
-                                  width: 40,
-                                  height: 40,
+                                  width: size.width * 0.1,
+                                  height: size.width * 0.1,
                                   child: Image.network(
                                     'https://images.pexels.com/photos/1878522/pexels-photo-1878522.jpeg?auto=compress&cs=tinysrgb&h=350',
                                     fit: BoxFit.cover,
@@ -136,7 +136,7 @@ class HomeScreen extends StatelessWidget {
                                       height: 2,
                                     ),
                                     SizedBox(
-                                      width: size.width * 0.6,
+                                      width: size.width * 0.55,
                                       child: const Text(
                                         'Milendra',
                                         overflow: TextOverflow.ellipsis,
@@ -147,7 +147,7 @@ class HomeScreen extends StatelessWidget {
                                       ),
                                     ),
                                     SizedBox(
-                                      width: size.width * 0.6,
+                                      width: size.width * 0.55,
                                       child: const Text("typing...",
                                           maxLines: 2,
                                           overflow: TextOverflow.ellipsis,
@@ -188,7 +188,7 @@ class HomeScreen extends StatelessWidget {
                                         '2',
                                         style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 10,
+                                            fontSize: 9,
                                             fontWeight: FontWeight.bold),
                                       ),
                                     ),
@@ -243,8 +243,8 @@ class _CommunityChanels extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20),
       child: SizedBox(
-        width: 200,
-        height: size.height * .15,
+        width: size.width,
+        height: size.height * .17,
         child: ListView.builder(
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(),
@@ -273,8 +273,8 @@ class _CommunityChanels extends StatelessWidget {
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(10),
                                     child: SizedBox(
-                                      width: 40,
-                                      height: 40,
+                                      width: size.width * 0.11,
+                                      height: size.width * 0.11,
                                       child: Image.network(
                                         'https://upload.wikimedia.org/wikipedia/commons/3/31/Room-education-classroom-children-library-students-1237486.jpg',
                                         fit: BoxFit.cover,
@@ -299,7 +299,7 @@ class _CommunityChanels extends StatelessWidget {
                                           ),
                                         ),
                                         SizedBox(
-                                          width: size.width * 0.4,
+                                          width: size.width * 0.35,
                                           child: const Text(
                                             'Poland College From las vegas',
                                             overflow: TextOverflow.ellipsis,
@@ -332,7 +332,7 @@ class _CommunityChanels extends StatelessWidget {
                                     width: 5,
                                   ),
                                   SizedBox(
-                                    width: size.width * 0.42,
+                                    width: size.width * 0.35,
                                     child: const Text(
                                       'Hi guys, I am looking for a partner to study together',
                                       maxLines: 1,
